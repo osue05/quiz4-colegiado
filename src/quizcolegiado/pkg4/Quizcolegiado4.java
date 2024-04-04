@@ -26,7 +26,7 @@ public class Quizcolegiado4 {
         estudiantes[2] = new Estudiante("Brandon", "Quimica", "Profesor G", 88.7);
        
 
-        // Listado general de estudiantes
+       
         StringBuilder listado = new StringBuilder("Listado de Estudiantes:\n");
         for (Estudiante estudiante : estudiantes) {
             if (estudiante != null) {
@@ -39,7 +39,7 @@ public class Quizcolegiado4 {
         }
         JOptionPane.showMessageDialog(null, listado.toString());
 
-        // Nombre del estudiante con la nota mayor
+        
         Estudiante mayorCalificacion = estudiantes[0];
         for (Estudiante estudiante : estudiantes) {
             if (estudiante != null && estudiante.getCalificacion() > mayorCalificacion.getCalificacion()) {
@@ -48,7 +48,7 @@ public class Quizcolegiado4 {
         }
         JOptionPane.showMessageDialog(null, "Estudiante con la nota mayor: " + mayorCalificacion.getNombre());
 
-        // Nombre del estudiante con la nota menor
+        
         Estudiante menorCalificacion = estudiantes[0];
         for (Estudiante estudiante : estudiantes) {
             if (estudiante != null && estudiante.getCalificacion() < menorCalificacion.getCalificacion()) {
@@ -57,7 +57,7 @@ public class Quizcolegiado4 {
         }
         JOptionPane.showMessageDialog(null, "Estudiante con la nota menor: " + menorCalificacion.getNombre());
 
-        // Promedio de calificaciones
+        
         double sumaCalificaciones = 0;
         int cantidadEstudiantes = 0;
         for (Estudiante estudiante : estudiantes) {
@@ -69,7 +69,7 @@ public class Quizcolegiado4 {
         double promedio = sumaCalificaciones / cantidadEstudiantes;
         JOptionPane.showMessageDialog(null, "Promedio de calificaciones: " + promedio);
 
-        // Calificaciones por encima del promedio
+        
         StringBuilder calificacionesEncimaPromedio = new StringBuilder("Calificaciones por encima del promedio:\n");
         for (Estudiante estudiante : estudiantes) {
             if (estudiante != null && estudiante.getCalificacion() > promedio) {
@@ -80,7 +80,7 @@ public class Quizcolegiado4 {
         }
         JOptionPane.showMessageDialog(null, calificacionesEncimaPromedio.toString());
 
-        // Calificaciones por debajo del promedio
+        
         StringBuilder calificacionesDebajoPromedio = new StringBuilder("Calificaciones por debajo del promedio:\n");
         for (Estudiante estudiante : estudiantes) {
             if (estudiante != null && estudiante.getCalificacion() < promedio) {
